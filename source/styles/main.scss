@@ -1,3 +1,15 @@
+
+@mixin circle($size,$color){
+  width: $size;
+  height: $size;
+  background-color: $color;
+  border-radius: $size/2;
+}
+
 body{
-  background: green;
+  background: blue;
+}
+
+div.it{
+  @include circle(250px,#ccc);
 }
